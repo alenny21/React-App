@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-function ListGroup() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+function ListGroup({ items, heading }) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const getMessage = () => {
@@ -14,7 +13,7 @@ function ListGroup() {
 
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {getMessage()}
       <ul className="list-group">
         {items.map((item, index) => (
