@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ListGroup({ items, heading }) {
+function ListGroup({ items, heading, onSelectItem }) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const getMessage = () => {
@@ -24,7 +24,10 @@ function ListGroup({ items, heading }) {
                 : "list-group-item"
             }
             key={item}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => {
+              setSelectedIndex(index);
+              onSelectItem(item);
+            }}
           >
             {item}
           </li>
