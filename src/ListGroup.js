@@ -6,7 +6,7 @@ function ListGroup({ items, heading, onSelectItem }) {
   const getMessage = () => {
     return items.length === 0 && <p>No item found</p>;
     // or alternatively
-    // return items.length === 0 ? <p>No item found</p>
+    // return items.length === 0 ? <p>No item found</p> : null;
   };
 
   const handleClick = (event) => console.log(event);
