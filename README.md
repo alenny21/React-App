@@ -11,5 +11,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## I am following the "React Tutorial for beginners" from "Programming with Mosh
+## I followed the "React Tutorial for beginners" from "Programming with Mosh
 ## Link: https://www.youtube.com/watch?v=SqcY0GlETPk
