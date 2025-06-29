@@ -3,7 +3,7 @@ import Alert from "./Alert";
 import './App.css'; // Make sure you have this CSS file
 
 function App() {
-  let cities = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+  let cities = ["Manhattan", "Santo Domingo", "Puerto Plata"];
   let pokemonCities = ["Heartland", "Accumula", "Pallet", "Goldenrod", "Hearthome"];
 
   const handleSelectedItem = (item) => {
