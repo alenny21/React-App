@@ -4,7 +4,7 @@ import './App.css'; // Make sure you have this CSS file
 
 function App() {
   let cities = ["Manhattan", "Santo Domingo", "Puerto Plata"];
-  let pokemonCities = ["Heartland", "Accumula", "Pallet", "Goldenrod", "Hearthome"];
+  let hobbies = ["Crocheting", "Coding", "Traveling", "Trying New Things"];
 
   const handleSelectedItem = (item) => {
     console.log(item);
@@ -32,8 +32,8 @@ function App() {
           onSelectItem={handleSelectedItem}
         />
         <ListGroup
-          items={pokemonCities}
-          heading={"Pokemon Cities"}
+          items={hobbies}
+          heading={"Hobbies"}
           onSelectItem={handleSelectedItem}
         />
       </div>
