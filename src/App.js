@@ -1,29 +1,42 @@
 import ListGroup from "./ListGroup";
 import Alert from "./Alert";
+import './App.css'; // Make sure you have this CSS file
 
 function App() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-  let items2 = ["Heartland", "Accumula", "Pallet", "Goldenrod", "Hearthome"];
+  let cities = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+  let pokemonCities = ["Heartland", "Accumula", "Pallet", "Goldenrod", "Hearthome"];
 
   const handleSelectedItem = (item) => {
     console.log(item);
   };
 
   return (
-    <div>
+    <div className="app-container">
+      <header className="header">
+        <h1>Alenny Almonte</h1>
+        <p>📧 almontealenny@gmail.com</p>
+        <p>
+          <a href="https://www.linkedin.com/in/alenny" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        </p>
+        <p className="tagline">Passionate about front-end, cybersecurity & building cool projects 💻</p>
+      </header>
+
       <Alert>
-        Hello <span>World</span>
+        Welcome to my React App! 🌟
       </Alert>
-      <ListGroup
-        items={items}
-        heading={"Cities"}
-        onSelectItem={handleSelectedItem}
-      />
-      <ListGroup
-        items={items2}
-        heading={"Pokemon Cities"}
-        onSelectItem={handleSelectedItem}
-      />
+
+      <div className="list-section">
+        <ListGroup
+          items={cities}
+          heading={"Favorite Cities"}
+          onSelectItem={handleSelectedItem}
+        />
+        <ListGroup
+          items={pokemonCities}
+          heading={"Pokemon Cities"}
+          onSelectItem={handleSelectedItem}
+        />
+      </div>
     </div>
   );
 }

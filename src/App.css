@@ -1,0 +1,44 @@
+.app-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f4ff; /* light lavender */
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #e6dcff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(122, 79, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #7a4fff;
+  margin-bottom: 0.5rem;
+}
+
+.header a {
+  color: #7a4fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.list-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
